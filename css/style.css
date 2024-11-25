@@ -1,0 +1,166 @@
+/* Geral */
+*{
+    padding: 0;
+    margin: 0;
+    font-family: Georgia;
+    list-style: none;
+    text-decoration: none;
+}
+
+a {
+    transition: 0.4s;
+}
+
+a:hover{
+    color: var(--cor-transicao);
+}
+
+.container__titulo,
+.container__descricao,
+.autor{
+    margin-bottom: 1rem;
+}
+
+.container__titulo{
+    font-size: 2rem ;
+}
+
+.autor{
+    color: var(--cor-autor);
+    font-weight: bold;
+}
+
+#siderbar__busca,
+#siderbar__categorias,
+#siderbar__tags{
+    padding: 1.5rem;
+    border: 1px solid var(--cor-borda);
+    margin-bottom: 1rem;
+}
+
+#siderbar__busca h4,
+#siderbar__categorias h4,
+#siderbar__tag h4{
+    margin-bottom: 1.5rem;
+    font-size: 1.6rem;
+}
+
+#rodape h2,
+#rodape p{
+    margin-bottom: 1rem;
+}
+
+/* Root */
+:root{
+    --cor-texto: #444;
+    --cor-transicao: #37a1f7;
+    --cor-borda: #ddd;
+    --cor-autor: #333;
+    --cor-branco: #fff;
+}
+
+
+/* Navbar*/
+
+#navegacao{
+    padding: 1.5rem 2.5rem;
+    border-bottom: 2px solid var(--cor-borda);
+}
+
+#navegacao__barra{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 100%;
+    margin: 0 auto;
+}
+
+#navegacao__links{
+    display: flex;
+    gap: 1rem;
+}
+
+/* conteúdo principal */
+.container{
+    display: flex;
+    gap: 3rem;
+    padding: 2rem 2.5rem;
+    max-width: 100%;
+    margin: 0 auto;
+}
+
+.container__posts{
+    flex: 3 1 0;
+}
+
+.container__post{
+    margin-bottom: 2.5rem;
+    
+}
+
+.container__post img{
+    width: 100%;
+    margin-bottom: 1rem;
+}
+
+/* barra lateral */
+
+#siderbar{
+    flex: 1 1 0;
+    
+
+}
+
+#siderbar__busca form{
+    display: flex;
+}
+
+#siderbar__busca input{
+    padding: 0.5rem 1rem;
+    border: 1px solid var(--cor-borda);
+}
+
+#siderbar__busca input[type="submit"]{
+    cursor: pointer;
+    background-color: var(--cor-transicao);
+    color: var(--cor-branco);
+    border: none;
+}
+
+#siderbar__categorias ul{
+    margin-bottom: 1rem;
+}
+
+#siderbar__tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem; /* Ajuste o espaçamento entre as tags */
+}
+
+#siderbar__tags a {
+    display: inline-block;
+    background-color: #ddd;
+    padding: 0.5rem 1rem;
+    border-radius: 0.3rem;
+    color: var(--cor-texto);
+    font-size: 0.9rem;
+    margin: 0.09rem;
+}
+
+/* Rodapé */
+#rodape{
+    border: 2px solid var(--cor-borda);
+    padding: 3rem;
+    text-align: center;
+}
+
+/* Responsivo */
+
+@media (max-width:450px){
+    .container{
+        flex-wrap: wrap;
+    }
+}
+
+
+
